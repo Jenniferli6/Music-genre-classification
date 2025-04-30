@@ -43,20 +43,17 @@ Our goal is to identify which combinations yield the best classification accurac
 
 
 # Folder Structure
-.
-├── 100_data/
-│   ├── features_30_sec.csv
-│   └── preprocessed_data.npz
-│
-├── 200_code/
-│   ├── 201_processing/         # Audio augmentation & spectrogram generation
-│   ├── 202_spec_modelling/     # Spectrogram-based model code
-│   ├── 203_waveform_modelling/ # Raw-waveform model code
-│   └── 204_feature_modelling/  # Pre-extracted-feature model code
-│
-├── models/                     # Saved model checkpoints
-├── outputs/                    # Figures, logs, and evaluation metrics
-├── dataset_downloader.sh       # Download raw audio via Kaggle API
-└── requirements.txt            # Python dependencies
+	•	100_data/
+	•	features_30_sec.csv
+	•	preprocessed_data.npz
+	•	200_code/
+	•	201_processing/ — Audio augmentation & spectrogram generation
+	•	202_spec_modelling/ — Spectrogram-based model code
+	•	203_waveform_modelling/ — Raw-waveform model code
+	•	204_feature_modelling/ — Pre-extracted-feature model code
+	•	models/ — Saved model checkpoints
+	•	outputs/ — Figures, logs, and evaluation metrics
+	•	dataset_downloader.sh — Script to download raw audio via the Kaggle API
+	•	requirements.txt — Python dependencies
 
 # Running Instructions
