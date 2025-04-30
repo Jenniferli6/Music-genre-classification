@@ -1,5 +1,10 @@
 # Music Genre Classification
 
+![Music Genre Illustration](https://music.vinetogo.com/wp-content/uploads/2024/07/music-genre.jpg)
+
+
+## Links to Reports
+
 **Report Link:**  
 [Music Genre Classification Report](https://docs.google.com/document/d/1GRdB4p3Wy2gIoguUn2gJcUwLOuCMR_ttBRAXQtfMpjg/edit?tab=t.0#heading=h.ab53ba3frjds)
 
