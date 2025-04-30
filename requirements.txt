@@ -10,5 +10,6 @@ keras
 xgboost
 transformers
 torch
+torchvision
 torchaudio
 tqdm
