@@ -83,7 +83,7 @@ xgb_model = XGBClassifier()
 xgb_model.load_model('300_model/xgb_tuned_model.json')
 ```
 
-Load the customly created  Neural Network user need to run following code:
+### Load the customly created  Neural Network
 
 ```python
 from tensorflow.keras.models import load_model
