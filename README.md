@@ -70,3 +70,23 @@ df = audio_features.get_dataframe()
 ```
 
 
+## Loading Pretrained Models
+
+You can skip training and load our custom models directly from the `300_model/` folder.
+
+### Load the Fine-Tuned XGBoost Model
+
+```python
+from xgboost import XGBClassifier
+
+xgb_model = XGBClassifier()
+xgb_model.load_model('300_model/xgb_tuned_model.json')
+```
+
+Load the customly created  Neural Network user need to run following code:
+
+```python
+from tensorflow.keras.models import load_model
+
+nn_model = load_model('300_model/best_neural_network_model_30sec.h5')
+```
