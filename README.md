@@ -1,12 +1,10 @@
 # Music Genre Classification
 
 **Report Link:**  
-(https://docs.google.com/document/d/1GRdB4p3Wy2gIoguUn2gJcUwLOuCMR_ttBRAXQtfMpjg/edit?tab=t.0#heading=h.ab53ba3frjds)
+[Music Genre Classification Report](https://docs.google.com/document/d/1GRdB4p3Wy2gIoguUn2gJcUwLOuCMR_ttBRAXQtfMpjg/edit?tab=t.0#heading=h.ab53ba3frjds)
 
 **Presentation Link:**  
-[Insert presentation URL here]
-
----
+[Music Genre Classification Presentation](https://docs.google.com/presentation/d/1jcWxvFa9KaiItuE7CHC1lh-snfG9U-EIDXSOQP_95gM/edit?slide=id.g351aa865629_0_88#slide=id.g351aa865629_0_88)
 
 ## Introduction
 
@@ -44,15 +42,31 @@ Our goal is to identify which combinations yield the best classification accurac
 
 # Folder Structure
 	•	100_data/
-	   •	features_30_sec.csv
-	   •	preprocessed_data.npz
+	•	features_30_sec.csv
+	•	preprocessed_data.npz
 	•	200_code/
-	   •	201_processing/ — Audio augmentation & spectrogram generation
-	   •	202_spec_modelling/ — Spectrogram-based model code
-	   •	203_waveform_modelling/ — Raw-waveform model code
-	   •	204_feature_modelling/ — Pre-extracted-feature model code
-	•	300_model/ — Saved model checkpoints and best models
+	•	201_processing/ — Audio augmentation & spectrogram generation
+	•	202_spec_modelling/ — Spectrogram-based model code
+	•	203_waveform_modelling/ — Raw-waveform model code
+	•	204_feature_modelling/ — Pre-extracted-feature model code
+	•	300_models/ — Saved model checkpoints and best models
 	•	dataset_downloader.sh — Script to download raw audio via the Kaggle API
 	•	requirements.txt — Python dependencies
 
-# Running Instructions
+## Running Analysis and Feature Extraction
+
+All Jupyter notebooks (`*.ipynb`) are designed to reproduce our study results when run in order. **Before** training any models, execute the scripts in the **201_processing/** folder to generate the necessary preprocessed data.
+
+### Feature Extraction
+
+The `feature_extractor.py` script in **201_processing/** defines an `AudioFeature` class that replicates the same feature set used in our experiments. To extract features for any `.wav` file and obtain a pandas DataFrame:
+
+```python
+from feature_extractor import AudioFeature
+
+test_input_path = 'path/to/audio.wav'
+audio_features = AudioFeature(test_input_path)
+df = audio_features.get_dataframe()
+```
+
+
