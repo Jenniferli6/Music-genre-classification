@@ -2,7 +2,6 @@
 
 ![Music Genre Illustration](https://music.vinetogo.com/wp-content/uploads/2024/07/music-genre.jpg)
 
-
 ## Links to Reports
 
 **Report Link:**  
@@ -59,6 +58,11 @@ Our goal is to identify which combinations yield the best classification accurac
 	•	requirements.txt — Python dependencies
 
 ## Running Analysis and Feature Extraction
+In order to run the files user need to download necessary libraries. It can be achieved by running following command
+
+```bash
+pip install -r requirements.txt
+```
 
 All Jupyter notebooks (`*.ipynb`) are designed to reproduce our study results when run in order. **Before** training any models, execute the scripts in the **201_processing/** folder to generate the necessary preprocessed data.
 
