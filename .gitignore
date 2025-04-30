@@ -1,1 +1,4 @@
 /data
+100_data/img_data.npz
+100_data/test_spec.npz
+200_code/201_processing/augmented_spec.npz
