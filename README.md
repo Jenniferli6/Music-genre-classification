@@ -58,13 +58,16 @@ Our goal is to identify which combinations yield the best classification accurac
 	•	requirements.txt — Python dependencies
 
 ## Running Analysis and Feature Extraction
-In order to run the files user need to download necessary libraries. It can be achieved by running following command
+In order to run the files user need to download necessary libraries. It can be achieved by running the following command:
 
 ```bash
 pip install -r requirements.txt
 ```
 
 All Jupyter notebooks (`*.ipynb`) are designed to reproduce our study results when run in order. **Before** training any models, execute the scripts in the **201_processing/** folder to generate the necessary preprocessed data.
+This is especially important to note for spectrogram input data. The original and augmented npz files were **too large** to upload to GitHub. Therefore, you must run **create_spectrogram.ipynb** to generate test_spec.npz (original
+spectrograms data), and **augmented_spectrograms.ipynb** to generate augmented_spec.npz (original + augmented spectrogram training data).
+
 
 ### Feature Extraction
 
@@ -79,7 +82,7 @@ df = audio_features.get_dataframe()
 ```
 
 
-## Loading Pretrained Models
+## Loading Pretrained Musical Feature-Based Models 
 
 You can skip training and load our custom models directly from the `300_model/` folder.
 
