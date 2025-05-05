@@ -54,6 +54,7 @@ Our goal is to identify which combinations yield the best classification accurac
 	•	203_waveform_modelling/ — Raw-waveform model code
 	•	204_feature_modelling/ — Pre-extracted-feature model code
 	•	300_models/ — Saved model checkpoints and best models
+	•	400_reports/ — Final paper
 	•	dataset_downloader.sh — Script to download raw audio via the Kaggle API
 	•	requirements.txt — Python dependencies
 
